@@ -1,13 +1,14 @@
 # SpeechAURA
  Emotion Insight from Voice
 
- ### will make a package so that user can import this libarary and input a voice file as input and get spectral form and mfcc plot
+ ### will make a package so that user can import this library and input a voice file as input and get spectral form and mfcc plot
 
 ## package
 
  ```bash
 pip install speechaura
 ```
+
 ### if file given as input isnt in wav file we will converet it into wav from mp3 etc
 ### guess we will also add model evaluation and model saving and delete comments and package it tooo maybe bot ?
 ## about dataset
