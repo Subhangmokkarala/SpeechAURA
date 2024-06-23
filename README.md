@@ -1,22 +1,66 @@
-# SpeechAURA - MLOPS Project 
- Emotion Insight from Voice
+# AuraSpeech: Sentiment Analysis Web App with Audio Input
 
- ### will make a package so that user can import this library and input a voice file as input and get spectral form and mfcc plot
+AuraSpeech is a sentiment analysis web application that analyzes emotions expressed in audio recordings using Mel Frequency Components (MFCs). The project integrates machine learning models for sentiment analysis, audio processing techniques, and web development for a comprehensive solution.
 
-## package
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
+- [Setup Instructions](#setup-instructions)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
- ```bash
-pip install speechaura
-```
+## Introduction
+AuraSpeech combines text and audio inputs to provide real-time sentiment analysis. It captures emotional cues and nuances in speech patterns using MFCs extracted from audio recordings. The web application offers an intuitive interface for users to input text or record audio for sentiment analysis.
 
-### if file given as input isnt in wav file we will converet it into wav from mp3 etc
-### guess we will also add model evaluation and model saving and delete comments and package it tooo maybe bot ?
-## about dataset
+## Features
+- Multi-modal sentiment analysis using text and audio inputs.
+- Mel Frequency Components (MFCs) extraction for audio processing.
+- Real-time analysis and instant feedback on emotions expressed.
+- User-friendly web interface with text input and audio recording capabilities.
+- Dockerized deployment for easy setup and scalability.
+- CI/CD pipeline for automated testing and deployment.
 
-### REMA-D is a data set of 7,442 original clips from 91 actors. These clips were from 48 male and 43 female actors between the ages of 20 and 74 coming from a variety of races and ethnicities (African America, Asian, Caucasian, Hispanic, and Unspecified). Actors spoke from a selection of 12 sentences. The sentences were presented using one of six different emotions (Anger, Disgust, Fear, Happy, Neutral, and Sad) and four different emotion levels (Low, Medium, High, and Unspecified).
+## Technologies Used
+- Python: Flask, TensorFlow, Scikit-Learn, Librosa
+- HTML/CSS/JavaScript: Bootstrap, jQuery
+- Docker: Containerization and deployment
+- GitHub Actions: CI/CD pipeline
+- Prometheus/Grafana: Monitoring and analytics
 
-## to download 
-
-```bash 
-https://www.kaggle.com/datasets/ejlok1/cremad
-```
+## Project Structure
+```python
+AuraSpeech/
+│
+├── app/
+│   ├── static/
+│   │   ├── css/
+│   │   └── js/
+│   ├── templates/
+│   ├── audio_processing.py
+│   ├── model.py
+│   ├── routes.py
+│   └── app.py
+│
+├── data/
+│   ├── audio_samples/
+│   └── models/
+│
+├── docs/
+│   └── README.md
+│
+├── tests/
+│   ├── unit_tests/
+│   └── integration_tests/
+│
+├── .github/
+│   └── workflows/
+│       └── ci-cd.yaml
+│
+├── Dockerfile
+├── docker-compose.yml
+├── requirements.txt
+├── LICENSE
+└── README.md
